@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<lang="en">
+    <head>
+        <title>ABOUT ME</title>
+        <meta charset="utf-8"/>
+        <meta name="newport" content="width=device=width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        </head>
+        <body>
+            <body class="body">
+                <header class="mainHeader">
+                    <div class="logo">Roxanne Francisco <br>
+                    <font size="3" color="black">forever your friend ^_^</font>
+                    </div><br>
+                        <nav><ul>
+                            <li class="active"><a href="index.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; HOME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                            <li><a href="aboutme.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ABOUT ME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                            <li><a href="gallery.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GALLERY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                            <li><a href="contact.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                            </ul>
+                        </nav>
+                </header>
+                <div class="mainContent"><br>
+                    <center><caption><strong><font face="Monotype corsiva" size="30"><marquee>All abOut Me :)</marquee></font></strong></caption>
+				    </center>
+                    <div class="content">
+                        <article class="topcontent">
+						<tr>
+    <td width="800"><img src="img/IMG20170212150638.jpg" width="800" name="photoslider"></td>
+  </tr>
+  <tr>
+    <td width="800"><form method="POST" name="rotater">
+      <div align="center"><center><p><script language="JavaScript1.1">
+						var photos=new Array()
+                        var which=0
+
+/*Change the below variables to reference your own images. You may have as many images in the slider as you wish*/
+photos[1]="img/20161214_161205.jpg"
+photos[2]="img/20160925_132101.jpg"
+photos[3]="img/20161214_161202.jpg"
+photos[4]="img/20160925_102902.jpg"
+photos[5]="img/20170127_152656.jpg"
+
+
+function backward(){
+if (which>0){
+window.status=''
+which--
+document.images.photoslider.src=photos[which]
+}
+}
+
+function forward(){
+if (which<photos.length-1){
+which++
+document.images.photoslider.src=photos[which]
+}
+else window.status='End of gallery'
+}
+
+</script><br><input type="button" value="&lt;&lt;Back" name="B2"
+
+      onClick="backward()"> <input type="button" value="Next&gt;&gt;" name="B1"
+      onClick="forward()"><br>
+    </form>
+	</td>
+  </tr>
+                        </article>
+                    </div>
+                </div>
+                <footer class="mainFooter"></footer>
+                                                    </body>
+                                                    </html>
